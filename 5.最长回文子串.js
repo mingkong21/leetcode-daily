@@ -10,6 +10,7 @@
  * @return {string}
  */
 var longestPalindrome = function (s) {
-
+    if (s.length === 1) return s;
+    if (s.length === 2) return s[0];
 };
 // @lc code=end
