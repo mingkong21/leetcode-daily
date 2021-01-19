@@ -24,5 +24,6 @@ var isPalindrome = function (x) {
         x = (x - temp) / 10;
     }
     return old === now;
+    // 重做回文数
 };
 // @lc code=end

@@ -12,6 +12,6 @@
 var longestPalindrome = function (s) {
     if (s.length === 1) return s;
     if (s.length === 2) return s[0];
-    
+    // 未做
 };
 // @lc code=end
