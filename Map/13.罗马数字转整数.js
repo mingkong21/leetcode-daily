@@ -38,6 +38,19 @@ var romanToInt = function (s) {
             res += temp;
         }
     }
-    return res;
+    // return res;
+
+    // 思路二：列出所有特殊情况，额外处理
+    let specialMap = { IV: 4, IX: 9, XL: 40, XC: 90, CD: 400, CM: 900 };
+    return s
+        .split('')
+        .reduce(
+            (prev, curr, index, arr) =>
+                ((arr[index + 1] &&
+                    specialMap[curr + arr[index + 1]] &&
+                    -map[curr]) ||
+                    map[curr]) + prev,
+            0
+        );
 };
 // @lc code=end
