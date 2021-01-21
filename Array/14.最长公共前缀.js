@@ -26,5 +26,7 @@ var longestCommonPrefix = function (strs) {
         res = res + strs[0][i];
     }
     return res;
+
+    // 重做最长公共前缀
 };
 // @lc code=end
