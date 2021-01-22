@@ -37,5 +37,7 @@ var isValid = function (s) {
         return false;
     }
     return true;
+
+    // 重做
 };
 // @lc code=end
