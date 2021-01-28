@@ -43,5 +43,16 @@ var isPalindrome = function (x) {
     // 对比法一的好处：
     // 每一次循环都进行回文的判断，不符合要求的情况会及时退出，达到减少循环的次数的目的
     return true;
+
+    // 3. 暴力法：字符串对比
+    // 没啥好说的，仅做对比
+    const str = String(x);
+    const middleIndex = parseInt(str.length / 2);
+    for (let i = 0; i < middleIndex; i++) {
+        if (str[i] !== str[str.length - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
 };
 // @lc code=end
